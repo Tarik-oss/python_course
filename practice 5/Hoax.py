@@ -8,6 +8,8 @@ from time import sleep
 def list_players(*args):
     return args
 
+# добра ідея робити опис функцій та розділення логіки
+
 # creat function that choose the random players
 
 def choose_player():
@@ -17,8 +19,10 @@ def choose_player():
 
 #creat function that output the winner to the screen
 
+# чудова ідея використовувати функції
 def Output():
     winner = choose_player()
+    # цикли можна прибрати, адже при першій ітерації ми одразу ж вийдемо з них
     while True:
         sleep(1)
         break
@@ -27,6 +31,7 @@ def Output():
         sleep(1)
         break
     print('Drum roll!!!! \n')
+    # цікавий підхід з очікуванням в 6 секунд
     for second in range(1, 6):
         print('\033[1m {}'.format('Bell '), second)
         sleep(1)
